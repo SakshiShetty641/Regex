@@ -1,6 +1,5 @@
 package com.bridgelabz;
-import java.util.Scanner;
-import java.util.regex.Pattern;
+
 /**
  * Purpose - To validate the first name using regex
  * @author - Sakshi Shetty
