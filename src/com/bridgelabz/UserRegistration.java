@@ -1,6 +1,6 @@
 package com.bridgelabz;
 /**
- * Purpose - To implement the methods
+ * Purpose - To implement the methods for user registration
  * @author - Sakshi Shetty
  */
 import java.util.Scanner;
