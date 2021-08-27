@@ -11,5 +11,7 @@ package com.bridgelabz;
             System.out.println("Welcome to the Program");
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.validateUserDetails();
+            SampleEmails.email();
+
         }
     }
