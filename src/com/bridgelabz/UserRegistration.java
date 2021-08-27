@@ -47,6 +47,20 @@ public class UserRegistration {
         return matcher.matches();
     }
 
+
+    /*
+     * Purpose: Boolean method to validate user's password.
+     * Rule 1: Password should have minimum 8 characters.
+     * @param password: Password to validate.
+     */
+    public boolean validatePassword(String password) {
+        // Space is not used, as console wont accept space.
+        String regex = "^[a-zA-z0-9]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
+
     /* Purpose: Boolean method to validate first name,last name and mail ID of user.*/
     public void validateUserDetails() {
         Scanner sc = new Scanner(System.in);
@@ -91,6 +105,16 @@ public class UserRegistration {
             System.out.println("Mobile number is valid");
         else
             System.out.println("Mobile number is invalid");
+
+        // validating Password.
+        System.out.println("Set your password");
+        details.setPassword(sc.next());
+
+        boolean passwd = registration.validatePassword(details.getPassword());
+        if (passwd)
+            System.out.println("Password available");
+        else
+            System.out.println("Password should have minimum 8 characters");
         sc.close();
     }
 }
