@@ -1,6 +1,6 @@
 package com.bridgelabz;
 /**
- * Purpose - To validate the email using regex
+ * Purpose - To validate the user entered details
  * @author - Sakshi Shetty
  * @version - 16.0
  * @since - 2021-08-25
